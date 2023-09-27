@@ -1,0 +1,24 @@
+/* Estilo para el contenedor del carrito */
+.cart-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos al inicio y al final */
+    cursor: pointer;
+  }
+  
+  /* Estilo para el ícono del carrito */
+  .cart-icon {
+    font-size: 24px;
+    margin-left: auto; /* Mueve el ícono hacia la derecha */
+  }
+  
+  /* Estilo para la notificación */
+  .notification {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  
+  
