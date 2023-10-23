@@ -1,14 +1,21 @@
-import React from 'react';
-import Navbar from './componentes/Navbar';
-import ItemListContainer from './componentes/ItemListContainer';
-import './App.css';
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css'
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <h1>Domcraft.ec</h1>
-      <ItemListContainer greeting="¡Bienvenido a nuestra tienda en línea!" />
+    <div className="app--container">
+      <BrowserRouter>
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>}></Route>
+          <Route path="/category/:category" element={<ItemListContainer />}></Route>
+          <Route path="/item/:itemId" element={<ItemDetailContainer />}></Route>
+          <Route></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

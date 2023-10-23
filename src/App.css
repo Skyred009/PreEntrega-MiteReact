@@ -1,3 +1,9 @@
-body {
-  background-color: lightblue;
+.app--container {
+  background-color: #e6ce9c;
+  height: 50px;
+  padding-bottom: 50px;
+}
+.product-image {
+  width: 100px;
+  height: 100px;
 }
